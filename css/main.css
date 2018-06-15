@@ -1,0 +1,96 @@
+body, html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  background-color: #f9faff; }
+
+header {
+  margin-bottom: 20px; }
+  header nav {
+    width: 300px;
+    margin: 0 auto; }
+    header nav ul {
+      list-style: none; }
+      header nav ul li {
+        display: inline-block; }
+
+.info {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center; 
+  background-color: #eee;
+}
+
+#mealDetails {
+  border: 2px solid #000;
+  height: 75vh;
+  width: 45%; }
+  #mealDetails form {
+    width: 100%;
+    margin: 0 auto; }
+    #mealDetails form label {
+      font-size: 15px; }
+
+#results {
+  height: 75vh;
+  width: 45%;
+  margin: 0 auto; }
+  #results .userResults-top, #results .userResults-bottom {
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 2px solid #000; }
+  #results .userResults-bottom {
+    margin-top: 86px; }
+
+.reset {
+  bottom: 40px;
+  right: 40px;
+  position: fixed; }
+
+.loading {
+  position: relative;
+  height: 100%; }
+
+.loading:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9) no-repeat center center;
+  background-image: url("./loading-animation.gif"); }
+
+.animate-view-container {
+  position: relative;
+  min-height: 100%; }
+
+.animate-view.ng-enter, .animate-view.ng-leave {
+  transition: 1s linear all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #eee; }
+
+.animate-view.ng-enter {
+  opacity: 0;
+  z-index: 100; }
+
+.animate-view.ng-enter.ng-enter-active {
+  opacity: 1; }
+
+.animate-view.ng-leave {
+  opacity: 1;
+  z-index: 99; }
+
+.animate-view.ng-leave.ng-leave-active {
+  opacity: 0; }
+
+
+
+
+  
